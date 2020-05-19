@@ -39,24 +39,18 @@ body{
 .cards{
   background: white;
   padding: 20px;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 #right {
   float: right;
   width: 30%;
-  padding: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 
 #left {
   float:left;
-  width: 65%;
-  padding: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 70%;
 }
 
 
@@ -110,4 +104,42 @@ ol {
 
 .content h1{
   text-align: center;
+}
+
+@media screen and (max-width: 1500px) {
+  #left, #right {
+    width: 50%;
+    padding: 0;
+  }
+  #title{
+    font-size: 70px;
+    font-style: bold;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  #left, #right {
+    width: 100%;
+    padding: 0;
+  }
+  #title {
+    font-size: 50px;
+  }
+
+  #name {
+    display: none;
+  }
+
+  #dis {
+    font-size: 20px;
+  }
+
+  #image {
+    width: 100%;
+  }
+
+  #tribute-info {
+    font-size: 17px;
+  }
 }
